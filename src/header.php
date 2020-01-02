@@ -56,7 +56,7 @@
                         <div class="side-menu-overlay" style="width: 0px; opacity: 0;"></div>
                         <div class="side-menu-wrapper">
                             <a href="#" class="menu-close">&times;</a>
-                            <a class="logo_img" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
+                            <a class="logo_img" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg"></a>
                             <ul>
                             <div class="social-menu">
                                 <?php wp_nav_menu(array('menu' => 'menu', 'container' => 'nav', 'container_class' => 'nav_menu', 'menu_class' => 'menu')); ?>
