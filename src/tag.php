@@ -15,7 +15,9 @@
 
                 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?> 
                     <div class="post__container">
-        
+                    <div class="img__post">
+                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
+                </div>
                         <div class="container__post">
                             <div class="data--coments">
                                     <span><img src="<?php bloginfo('template_directory'); ?>/img/tempo.png"> <?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date; ?></span>

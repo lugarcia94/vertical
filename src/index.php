@@ -31,12 +31,60 @@ get_header(); ?>
     </div>
 </div>
 <div class="content container container__full">
+    <h2 class="post__title-header">Destaques</h2>
+    <div class="left--posts">
+    
+    <?php
+            $args = array(
+            'posts_per_page' => 4, 
+            'orderby' => 'desc',
+            'paged'=>$paged,
+            'post_type' => 'post',
+            'cat' => 25
+            );
+            $wp_query = new WP_Query($args);
+            if ($wp_query->have_posts()) {
+            while ($wp_query->have_posts()) {
+                $wp_query->the_post();
+                $texto = get_the_content();
+                $texto = mb_strimwidth($texto, 0, 100, "...");
+        ?>
+            <div class="post__container">
+                <div class="img__post">
+                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
+                </div>
+                <div class="post__itens">
+                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><h3 class="title__post"><?php the_title(); ?></h3></a>
+                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><div class="desc__post"><?php the_field('descricao_curta'); ?></div></a>
+                    <div class="tags__post">
+                    <?php
+                        if(get_the_tag_list()) {
+                            echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+                        }
+                    ?>
+                    </div>
+                    
+                    <div class="data--coments">
+                        <span><img src="<?php bloginfo('template_directory'); ?>/img/tempo.png"> <?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date; ?></span>
+                        <span class="last"><img src="<?php bloginfo('template_directory'); ?>/img/coments.png"> <?php comments_number('0', '1', '%'); ?> </span>
+                    </div>
+
+                </div>
+            </div>
+
+        <?php } } ?>
+        </div>
+        </div>
+</div>
+
+
+<div class="content container container__full">
     <h2 class="post__title-header">Últimas postagens</h2>
     <div class="left--posts">
     
     <?php
             $args = array(
-            'posts_per_page' => 6, 
+            'posts_per_page' => 4, 
             'orderby' => 'desc',
             'paged'=>$paged,
             'post_type' => 'post'
@@ -72,16 +120,12 @@ get_header(); ?>
             </div>
 
         <?php } } ?>
-
-        <?php wordpress_pagination(); ?>
+ 
 
         </div>
  
         </div>
 
 </div>
-
-
-
 
 <?php get_footer(); ?>

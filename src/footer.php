@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <span>Portal Atualidades © 2019 - Todos os direitos reservados</span>
+        <span>House Auaha © 2020 - Todos os direitos reservados</span>
     </footer>
 	</div><!-- #content -->
 

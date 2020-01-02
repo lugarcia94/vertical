@@ -33,7 +33,7 @@
                 <div class="row menu__menu">
                 
                     <div class="menu__logo">
-                        <h1><a class="logo_img_desk" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a></h1>
+                        <h1><a class="logo_img_desk" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg"></a></h1>
                     </div>
 
                     <div class="social-menu">

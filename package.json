@@ -1,6 +1,6 @@
 {
   "name": "Auaha-WP",
-  "theme": "blogauaha",
+  "theme": "bloghouse",
   "version": "1.0.0",
   "description": "Theme Default",
   "main": "gulpfile.js",
@@ -10,7 +10,7 @@
     "stop": "docker-compose stop",
     "postinstall": "gulp && docker-compose up -d"
   },
-  "author": "Thomaz Takashi Oda Toyama <thomazot@gmail.com>",
+  "author": "Lucas Garcia <lucasgaarciaa@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^7.1.1",
