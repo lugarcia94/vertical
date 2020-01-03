@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <span>Sun Auaha © 2020 - Todos os direitos reservados</span>
+        <span>Lemon Auaha © 2020 - Todos os direitos reservados</span>
     </footer>
 	</div><!-- #content -->
 
