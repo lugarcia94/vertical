@@ -2,32 +2,47 @@
     z-index: 99
     position: sticky
     top: 0
-    background: #fff 
+    background: #000000e0 
     height: 70px 
 
     @media(max-width: 992px)
         height: 70px 
+
+*
+    outline none
+@media(min-width: 992px)
+    .home
+        .header-full
+            position: fixed
+            width: 100%
+@media(max-width: 991px)
+    .full__banner
+        margin-top: 70px
+
+    .header-full
+        background: #000
+        
 .menu
     display: flex
-    justify-content: center
+    justify-content: space-between
     flex-wrap: nowrap
     align-items: center
 
     li
-        width: 30%
+        width: auto
         a
-            color: #2e2e2e
+            color: #fff
             text-transform: uppercase
-            font-size: 13px
-            font-weight: 500
+            font-size: 12px
+            font-weight: 700
             transition: all 150ms ease-in-out 
 
             &:hover
-                color: #81cbc4
+                color: #f9bc14
                 text-decoration: none
 
 li#menu-item-16 a 
-    color: #81cbc4
+    color: #f9bc14
     font-weight: 600
 
 .menu__menu
@@ -47,7 +62,7 @@ li#menu-item-16 a
 .menu__logo
     display: flex
     flex-wrap: wrap
-    max-width: 215px
+    max-width: 160px
     width: 100%
     justify-content: space-between
     align-items: center
@@ -97,7 +112,7 @@ form#searchform
     align-items: center
     height: 70px
     flex-wrap: nowrap
-    max-width: 540px
+    max-width: 800px
     width: 100%
 
     .nav_menu
@@ -250,7 +265,7 @@ form#searchform
 
 .side-menu-wrapper 
     overflow: hidden 
-    background: #fff 
+    background: #000 
     padding: 20px
     position: fixed 
     top: 0 
@@ -325,7 +340,7 @@ header#masthead {
 
 
 input#s 
-    border: 1px solid #81cbc4
+    border: 1px solid #f9bc14
     border-radius: 0
     height: 45px
     font-size: 13px

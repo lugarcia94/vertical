@@ -1,6 +1,6 @@
 {
   "name": "Auaha-WP",
-  "theme": "bloghouse",
+  "theme": "vertical",
   "version": "1.0.0",
   "description": "Theme Default",
   "main": "gulpfile.js",

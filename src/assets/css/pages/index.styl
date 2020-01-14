@@ -8,16 +8,11 @@
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-    margin: 0 auto
+    margin: 30px auto
 
-        
-
-.ight--side
-    max-width: 265px
-    width 100%
-
+    
 .img__post 
-    max-height: 260px
+    max-height: 210px
     height: 100%
     overflow: hidden
     -webkit-transition: all 150ms ease-in-out
@@ -30,26 +25,27 @@
     width 100%
 
 .post__itens 
-    padding: 20px;
-    max-width: 100%;
-    width: 100%;
-    background: #fff;
+    padding: 20px 15px
+    max-width: 100%
+    width: 100%
+    background: #fff
     
  
     a 
         &:hover
             text-decoration: none
             .title__post
-                color: #81cbc4
+                color: #f9bc14
 
     .title__post 
         max-width: 100%
         color: #424040
         font-size: 16px
         text-align: center
-
+        color: #636363
+        font-weight: 700
         &:hover 
-            color: #81cbc4
+            color: #f9bc14
 
     .author__post 
         font-size: 13px
@@ -74,12 +70,12 @@
         text-align: center
 
         a 
-            color: #81cbc4  
+            color: #f9bc14  
         h1 
             font-size: 0.6875rem;
 
         &:hover 
-            color: #81cbc4!important
+            color: #f9bc14!important
 
 .tags__post 
     ul 
@@ -148,7 +144,86 @@
     display: block
     width: 100%
     margin: 15px 0
-    font-size: 25px
+    font-size: 35px
+    font-weight: 700
+    position relative
+
+    &:before
+        content: ''
+        width: 100px
+        height: 3px
+        background: #f9bc14
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -10px
+
+.content.container.container__full
+    > span
+        font-size: 20px
+        color: #333333
+        display: block
+        text-align: center
+        width 100%
+
+ul.service__block 
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    justify-content: center
+    width 100%
+
+    li
+        max-width 400px
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.19)
+        margin: 25px
+        padding: 15px
+        text-align: center
+        width 100%
+
+        img 
+            display: block
+            margin: 0 auto
+
+        h3
+            font-size: 18px
+            color: #636363
+            font-weight: 700
+            margin-top 15px
+
+        span
+            font-size: 13px
+            color: #050505
+            display: block
+            margin: 5px 0
+
+a.more__post
+    color: #f9bc14
+    font-size: 13px
+    font-weight: 700
+    margin: 10px 0
+    display: block
+    max-width 100px
+    margin: 0 auto
+
+.seemore
+    display: block
+    font-size: 13px
+    color: #626262
+    text-transform: uppercase
+    font-weight: 700
+    margin: 0 auto
+    border: 1px solid #626262
+    padding: 15px 10px
+    border-radius: 25px
+    text-decoration: none
+    transition: all 150ms ease-in-out
+    max-width 130px
+
+    &:hover
+        color: #fff
+        background: #626262
+        text-decoration: none
 
 .container__full
     margin: 30px auto
@@ -167,7 +242,7 @@
 
 .category, .single
     .header-full
-        border-bottom: 1px solid #81cbc414
+        border-bottom: 1px solid #f9bc1414
 
 .right--side 
     max-width: 260px
@@ -235,11 +310,11 @@
 
 .link__colunista
     margin: 0
-    border-bottom: 1px solid #81cbc457
+    border-bottom: 1px solid #f9bc1457
     padding-bottom: 20px
 
     a 
-        color: #81cbc4
+        color: #f9bc14
         font-size: 11px
 
         &:hover
@@ -260,7 +335,7 @@
 
         &:hover
             text-decoration: none
-            color: #81cbc4
+            color: #f9bc14
 
 .posts__lidos
     margin-top: 30px
@@ -271,7 +346,7 @@
 
 
     span
-        color:#81cbc4
+        color:#f9bc14
         padding: 30px 0
 
 div#primary 
@@ -342,7 +417,7 @@ a.logo_img_desk
             margin: 5px 0
 
             a  
-                color: #232323!important
+                color: #fff!important
                 font-weight: 700
 
 .news__content
@@ -386,3 +461,11 @@ a#loadmore
 
     &:hover
         opacity: 0.9
+
+.title__single 
+    color: #000
+    text-align: center
+    display: block
+    width: 100%
+    text-transform: uppercase
+    font-size: 30px

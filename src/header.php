@@ -33,7 +33,7 @@
                 <div class="row menu__menu">
                 
                     <div class="menu__logo">
-                        <h1><a class="logo_img_desk" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg"></a></h1>
+                        <h1><a class="logo_img_desk" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a></h1>
                     </div>
 
                     <div class="social-menu">
@@ -42,21 +42,14 @@
                         </div>
                     </div>
 
-                    <div class="search--menu">
-                            <form role="search" method="get" id="searchform" autocomplete="off">
-                                <div class="itens--form"><label for="s"></label>
-                                <input type="text" value="" name="s" id="s" placeholder="Pesquise o que desejar..." />
-                                <input type="submit" id="searchsubmit" value="" />
-                                </div>
-                            </form>
-                    </div>
+ 
                     <div class="menu-resp">
                                 
                         <a href="#" class="slide-menu-open"><img src="<?php bloginfo('template_directory'); ?>/img/menu-resp.png" width="30" height="30"></a>
                         <div class="side-menu-overlay" style="width: 0px; opacity: 0;"></div>
                         <div class="side-menu-wrapper">
                             <a href="#" class="menu-close">&times;</a>
-                            <a class="logo_img" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.jpg"></a>
+                            <a class="logo_img" href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo.png"></a>
                             <ul>
                             <div class="social-menu">
                                 <?php wp_nav_menu(array('menu' => 'menu', 'container' => 'nav', 'container_class' => 'nav_menu', 'menu_class' => 'menu')); ?>

@@ -14,24 +14,38 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div class="content container container__full">
+    <div class="left--posts">
+        <div class="tags__post">
+        <?php
+            if(get_the_tag_list()) {
+                echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
+            }
+        ?>
+        </div>
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+            <?php $my_postid = $post->ID; ?>
+            <div class="title__single">
+                <?php the_title(); ?>
+            </div>
+ 
 
-			<?php
-			while ( have_posts() ) : the_post();
+            <div class="sobre__text">
+                <?php  
+                    $content_post = get_post($my_postid);
+                    $content = $content_post->post_content;
+                    $content = apply_filters('the_content', $content);
+                    $content = str_replace(']]>', ']]&gt;', $content);
+                    echo $content;
+                ?>
+            </div>
+        
 
-				get_template_part( 'template-parts/content', 'page' );
+        <?php endwhile; endif; ?>
+    </div>
+ 
 
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-
-			endwhile; // End of the loop.
-			?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</div>
 
 <?php
 get_sidebar();
