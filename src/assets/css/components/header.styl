@@ -15,6 +15,7 @@
         .header-full
             position: fixed
             width: 100%
+
 @media(max-width: 991px)
     .full__banner
         margin-top: 70px
@@ -432,3 +433,20 @@ input#searchsubmit
     left: 0
     transition: all 150ms ease-in-out
     z-index: 9999
+
+
+ul.sub-menu
+    display: none
+    position: absolute;
+    padding-top: 50px;
+    left: -55px;
+    background: rgba(0,0,0,0.878)
+    top: 100%;
+    padding: 15px 50px;
+
+.menu-item-has-children
+    position relative
+    &:hover
+        ul.sub-menu
+            display: block
+

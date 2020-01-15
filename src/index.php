@@ -69,7 +69,7 @@ get_header(); ?>
             'orderby' => 'desc',
             'paged'=>$paged,
             'post_type' => 'post',
-            'cat' => 25
+            'cat' => 3
             );
             $wp_query = new WP_Query($args);
             if ($wp_query->have_posts()) {
@@ -80,24 +80,10 @@ get_header(); ?>
         ?>
             <div class="post__container">
                 <div class="img__post">
-                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><?php the_post_thumbnail(); ?></a>
+                    <?php the_post_thumbnail(); ?>
                 </div>
                 <div class="post__itens">
-                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><h3 class="title__post"><?php the_title(); ?></h3></a>
-                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><div class="desc__post"><?php the_field('descricao_curta'); ?></div></a>
-                    <div class="tags__post">
-                    <?php
-                        if(get_the_tag_list()) {
-                            echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-                        }
-                    ?>
-                    </div>
-                    
-                    <div class="data--coments">
-                        <span><img src="<?php bloginfo('template_directory'); ?>/img/tempo.png"> <?php $post_date = get_the_date( 'd/m/Y' ); echo $post_date; ?></span>
-                        <span class="last"><img src="<?php bloginfo('template_directory'); ?>/img/coments.png"> <?php comments_number('0', '1', '%'); ?> </span>
-                    </div>
-
+                    <h3 class="title__post"><?php the_title(); ?></h3>
                 </div>
             </div>
 
@@ -133,25 +119,17 @@ get_header(); ?>
                 </div>
                 <div class="post__itens">
                     <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><h3 class="title__post"><?php the_title(); ?></h3></a>
-                    <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><div class="desc__post"><?php the_field('descricao_curta'); ?></div></a>
-                    <div class="tags__post">
-                    <?php
-                        if(get_the_tag_list()) {
-                            echo get_the_tag_list('<ul><li>','</li><li>','</li></ul>');
-                        }
-                    ?>
-                    </div>
-                    
+
                     <a class="more__post" href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>">LER +</a>
 
                 </div>
             </div>
 
         <?php } } ?>
- 
+
 
         </div>
- 
+
         </div>
 
 </div>

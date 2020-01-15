@@ -97,12 +97,15 @@ form.wpcf7-form
 
     p
         margin-bottom: 10px
+        text-align: left
+            
 
         @media(max-width:992px)
             width: 100%
 
             label
                 width: 100%
+                text-align: left
 
                 span
                     width: 100%
@@ -119,32 +122,14 @@ form.wpcf7-form
             height: 50px
             border: 1px solid #dedede
 
-            @media(max-width: 360px)
+            @media(max-width: 767px)
                 width: 100%!important
+                max-width 100%!important
+ 
 
-        &:nth-child(7)
-            width:100%
-            text-align: right
-
-        &:nth-child(6)
+        &:nth-child(11)
             width: 100%
-
-            label
-                width: 100%
-
-                span
-                    width: 100%
-
-                    textarea
-                        border-radius: 2px
-                        background: #f8f8f8
-                        padding-left: 20px
-                        font-size: 12px
-                        font-style: italic
-                        padding-top: 10px
-                        color: #777777
-                        height: 125px
-                        border: 1px solid #dedede
+ 
 
 
     .wpcf7-form-control.wpcf7-submit 
@@ -157,6 +142,17 @@ form.wpcf7-form
 
 div#wpcf7-f100-o1 
     margin-top: 30px
+
+
+.wpcf7-form-control-wrap 
+    position: relative
+    margin-top: 5px!important
+    display: block
+
+input, textarea 
+    width: 100%
+    background: #f8f8f8
+
 
 .mapa_left 
     iframe 
