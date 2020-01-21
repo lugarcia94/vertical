@@ -19,8 +19,8 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/owl/owl.theme.default.min.css">
-    <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png">
-    <link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png" sizes="192x192">
+    <!-- <link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png"> -->
+    <!-- <link rel="icon" href="<?php bloginfo('template_directory'); ?>/img/favicon.png" sizes="192x192"> -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <?php wp_head(); ?>

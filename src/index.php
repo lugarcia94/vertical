@@ -56,11 +56,11 @@ get_header(); ?>
         </li>
     </ul>
 
-    <a class="seemore" href="/solucoes">Saiba mais</a>
+    <a class="seemore" href="/saiba-mais">Saiba mais</a>
 </div>
 
 <div class="content container container__full">
-    <h2 class="post__title-header">Segmentos de Atuação </h2>
+    <h2 class="post__title-header">Nossos projetos </h2>
     <div class="left--posts">
     
     <?php
@@ -119,7 +119,7 @@ get_header(); ?>
                 </div>
                 <div class="post__itens">
                     <a href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>"><h3 class="title__post"><?php the_title(); ?></h3></a>
-
+                    <div class="short__text"><?php echo $texto ?></div>
                     <a class="more__post" href="<?php echo get_permalink($post->ID); ?>" title="<?php the_title(); ?>">LER +</a>
 
                 </div>
