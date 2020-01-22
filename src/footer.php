@@ -48,10 +48,10 @@
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 5000
     });
-
-
 </script>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
